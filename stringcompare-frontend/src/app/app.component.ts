@@ -99,7 +99,7 @@ export class AppComponent implements OnInit {
           this.message = '🎉 You guessed it right!';
           this.complete = true;
         } else if (this.currentAttemptIndex >= this.maxAttempts) {
-          this.message = 'Game over! The correct word was "madhu".';
+          this.message = 'Game over!!';
           this.complete = true;
         } else {
           this.message = '';
