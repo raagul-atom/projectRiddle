@@ -94,3 +94,9 @@ public class StringcompareController {
         System.out.println("🔁 Word updated to: " + this.predefinedString);
     }
 }
+
+/*Request to update the word
+  curl -X POST http://localhost:8080/compare/set-word \
+  -H "Content-Type: application/json" \
+  -d '{"word": "clean"}'
+ */
