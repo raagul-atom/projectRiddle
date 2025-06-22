@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Riddle</h1>
+
+  <div class="grid">
+    <div *ngFor="let attempt of attempts" class="row">
+      <div
+        *ngFor="let c of attempt"
+        class="tile"
+        [ngClass]="c.result"
+      >
+        {{ c.char.toUpperCase() }}
+      </div>
+    </div>
+  </div>
+
+  <p class="message">{{ message }}</p>
+  <p class="hint">
+    Type using keyboard • Press <strong>Enter</strong> to submit •
+    <strong>Backspace</strong> to delete
+  </p>
+
+  <button class="reset-btn" (click)="resetGrid()" [disabled]="!canReset">
+    Reset
+  </button>
+</div>
